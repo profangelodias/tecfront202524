@@ -1,0 +1,92 @@
+/* Reset básico para remover estilos padrão do navegador */
+* {
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove espaçamentos internos */
+    box-sizing: border-box; /* Garante que padding e bordas sejam incluídos no tamanho total dos elementos */
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif; /* Define uma fonte padrão */
+    line-height: 1.6; /* Melhora a legibilidade do texto */
+    color: #333; /* Define a cor do texto */
+    background-color: #f4f4f9; /* Define uma cor de fundo suave */
+    padding: 10px; /* Adiciona espaçamento interno */
+}
+
+/* Cabeçalho */
+header {
+    background: #007BFF; /* Cor de fundo azul */
+    color: white; /* Cor do texto branca */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Navegação */
+nav ul {
+    display: flex; /* Usa flexbox para organizar os itens */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove espaçamento interno */
+}
+
+nav ul li {
+    margin: 0 15px; /* Adiciona espaçamento entre os itens */
+}
+
+nav ul li a {
+    color: white; /* Define a cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+/* Estilo principal */
+main {
+    max-width: 800px; /* Define uma largura máxima */
+    margin: 20px auto; /* Centraliza o conteúdo */
+    background: white; /* Fundo branco */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao redor */
+}
+
+/* Rodapé */
+footer {
+    text-align: center; /* Centraliza o texto */
+    margin-top: 20px; /* Adiciona espaçamento acima */
+    color: #555; /* Cor do texto */
+}
+
+/* Tabelas */
+table {
+    width: 100%; /* Largura total */
+    border-collapse: collapse; /* Remove espaços entre as células */
+    margin: 20px 0; /* Espaçamento vertical */
+}
+
+table th, table td {
+    border: 1px solid #ddd; /* Bordas das células */
+    padding: 10px; /* Espaçamento interno */
+    text-align: left; /* Alinhamento do texto */
+}
+
+table th {
+    background: #007BFF; /* Fundo azul */
+    color: white; /* Texto branco */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 5px; /* Reduz o espaçamento interno */
+    }
+
+    nav ul {
+        flex-direction: column; /* Organiza os itens verticalmente */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    main {
+        padding: 10px; /* Reduz o espaçamento interno */
+    }
+}
